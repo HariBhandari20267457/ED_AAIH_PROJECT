@@ -1,7 +1,5 @@
 Predicting Emergency Department Triage Acuity from Presenting Complaint Text and Vital Signs: A Hybrid Model with subgroup equity audit (MIMIC-IV-ED)
 
-
-
 Applied Artificial Intelligence in Health Care
 
 Name: Hari Bhandari 
@@ -49,9 +47,7 @@ Limitations	20
 References	22
 Code and Supporting Material	25
 Declaration of Artificial Intelligence (AI) and Supporting Tool Usage	25
-
-
-
+DATA ACCESS AND REQUIREMENT
 
 
 
@@ -281,3 +277,20 @@ I used generative AI and digital tools during the project, as follows:
 •	Grammarly: Correcting readability and grammar
 •	Research and External Sources: PhysioNet and MIMIC documentation and literature found through Google and journal websites.
 I ran all code locally, and all outputs in this report originate directly from my notebooks. While AI tools assisted in generating text and code, I personally reviewed, edited, and verified everything. I accept complete accountability for the academic integrity, referencing, and final quality of this submission.
+
+DATA ACCESS AND REQUIREMENT
+Data Access & Requirements Due to credentialing and privacy requirements, raw PhysioNet data files are not included in this repository.
+
+To run the pipeline locally:
+
+Obtain authorized access to the MIMIC-IV-ED database via PhysioNet.
+
+Download the following required CSV files into the project root directory:
+
+edstays.csv
+
+patients.csv
+
+triage.csv
+
+Execute Data_Prep.py to generate the preprocessed splits (x_train_clean.csv, y_train_clean.csv, etc.).
